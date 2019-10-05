@@ -1,0 +1,5 @@
+# get ip by this command
+# ifconfig en0 | awk '/inet /{print $2}'
+
+# run nslookup ip
+nslookup 192.168.29.128
