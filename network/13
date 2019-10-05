@@ -2,4 +2,9 @@
 # ifconfig en0 | awk '/inet /{print $2}'
 
 # run nslookup ip
-nslookup 192.168.29.128
+# or
+# host ip
+# or host 192.168.29.128 | awk '{print $5}' to cutout stuff
+# host 192.168.29.128
+
+ox-t6.21-school.ru.

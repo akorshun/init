@@ -1,0 +1,6 @@
+# It's need to add to /etc/hosts
+# this string
+# intra.42.fr 46.19.122.85
+
+#for example
+echo "46.19.122.85 intra.42.fr" >> /etc/hosts
