@@ -1,1 +1,2 @@
+# man resolv.conf
 echo /etc/resolv.conf

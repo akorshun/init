@@ -1,0 +1,5 @@
+# 1) choose one of ips from command
+dig slash16.org +short
+
+# 2) make whois of chosen ip
+whois 54.192.230.31
