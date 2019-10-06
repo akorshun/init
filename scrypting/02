@@ -1,22 +1,2 @@
 username=$1
-
-if [ -z $(awk -F: -v username=$username '$1 == username {print $1}' /etc/passwd) ] ; then
-
-	echo "FAIL: $username doesn't exit"
-
-else
-	# kill processed associated with user
-
-	if pgrep -q -u $username ; then
-
-		sudo kill -9 $(pgrep -u $username)
-	fi
-	if pgrep -q -U $username ; then
-
-		sudo kill -9 $(pgrep -U $username)
-	fi
-
-	# delete user
-
-	sudo userdel -r $username
-fi
+sudo killall -u $username && sudo deluser --remove-home -f $username
