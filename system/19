@@ -1,0 +1,7 @@
+# To find out all services that have been run at startup:
+# systemctl list-units --type service
+# this will show all services that has been loaded at boot and are active now. If you want to get a list of all services no matter they are active or not:
+
+systemctl -t service --state=active | awk '/active/{print $1}' | sed '$ d'
+
+# type of services - daemons

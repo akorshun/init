@@ -1,0 +1,4 @@
+# Protocol -> TCP, HostIP -> 127.0.0.1, Host Port -> 1222, GuestIP -> (your VM ip shown via command ifconfig), GuestPort -> 22
+# Finally you can ssh to your machine
+
+ssh -p 2222 osboxes@localhost

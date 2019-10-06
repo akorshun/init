@@ -1,0 +1,2 @@
+graphic interface: swith user on log on
+ssh session: run 'ssh some_user@127.0.0.1'
