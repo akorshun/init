@@ -1,0 +1,1 @@
+cat *.c | sed -ne '/void/p' -ne '/int/p' -ne '/char/p' -ne '/size_t/p' | sed -ne '/(/p' | sed '/return/d' | sed '/=/d' | sed '/ft_putchar.*;/d' | sed '/static/d' | sed '/\[/d' | uniq | sed 's/$/;/'
