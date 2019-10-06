@@ -1,0 +1,11 @@
+kill $!
+# $! expands to the PID of the last process executed in the background.
+
+# or look via jobs pid and the kill pid
+# jobs
+# kill %number
+
+# or
+# jobs -l
+# find pid and then
+# kill pid
