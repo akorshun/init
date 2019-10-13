@@ -1,2 +1,2 @@
-username=$1
-sudo killall -u $username && sudo deluser --remove-home -f $username
+sudo killall -u $1;
+sudo deluser --remove-home -f $1
